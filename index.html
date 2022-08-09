@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="icon" href="./images/Maestra Chivis.png">
     <title>Maestra Chivis</title>
@@ -15,9 +17,9 @@
     <header class="menu-header">
         <nav class="menu container">
             <a href="#">
-                <img class="menu__img" src="./images/Maestra Chivis.png" alt="Logo">
+                <img class="menu__img animate__animated animate__bounceInLeft" src="./images/Maestra Chivis.png" alt="Logo">
             </a>
-            <section class="menu__section">
+            <section class="menu__section animate__animated animate__bounceInRight">
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="./views/about.html">Sobre mí</a></li>
                     <li class="menu__item"><a class="menu__link" href="./views/subjects.html">Materias</a></li>
@@ -33,12 +35,12 @@
         <div class="main_home__grid">
             <img class="main_home__img" src="./images/main 1.png" alt="Cerebro ejercitandose">
         </div>
-        <div class="main_home__grid">
+        <div class="main_home__grid animate__animated animate__flipInX">
             <h2 class="main_home__header headers">Clases de regularización y preparación para exámenes
             </h2>
         </div>
         <div class="main_home__grid">
-            <p class="main_home__paragraph paragraphs">Todas las clases son personalizadas y a tu ritmo.
+            <p class="main_home__paragraph paragraphs animate__animated animate__fadeInUp">Todas las clases son personalizadas y a tu ritmo.
                 Contamos con preparación para tu examen a secundaria, preparatoria y universidad.
                 <br>
                 Aparta tu lugar, no dejes que te lo ganen.
@@ -48,23 +50,23 @@
 
     <section class="main-rest container">
         <div class="grid-method">
-            <h2 class="main-rest__title headers">Modalidad de clases</h2>
+            <h2 class="main-rest__title headers animate__animated animate__flipInX">Modalidad de clases</h2>
         </div>
         <div class="grid-method">
-            <h3 class="main-rest__subtitle subtitles">Online</h3>
+            <h3 class="main-rest__subtitle subtitles animate__animated animate__fadeInDown">Online</h3>
         </div>
         <div class="grid-method">
             <img class="main-rest__img-online" src="./images/Online.png" alt="Dibujo online">
         </div>
         <div class="grid-method">
-            <p class="main-rest__paragraph-online paragraphs">En esta época de distanciamiento podemos tomar clases
+            <p class="main-rest__paragraph-online paragraphs animate__animated animate__fadeInUp">En esta época de distanciamiento podemos tomar clases
                 online mediante google meets.</p>
         </div>
         <div class="grid-method">
-            <h3 class="main-rest__subtitle subtitles ">Presencial</h3>
+            <h3 class="main-rest__subtitle subtitles animate__animated animate__fadeInDown">Presencial</h3>
         </div>
         <div class="grid-method">
-            <p class="main-rest__paragraph-presential paragraphs">Te puedo atender presencialmente con todas las medidas
+            <p class="main-rest__paragraph-presential paragraphs animate__animated animate__fadeInUp">Te puedo atender presencialmente con todas las medidas
                 sanitarias</p>
         </div>
         <div class="grid-method">
@@ -74,12 +76,16 @@
 
     <footer class="footer">
         <section class="footer__section container">
-            <p class="footer__paragraph">Cupos y horarios sujetos a disponibilidad, los pagos se realizan al inicio de
+            <p class="footer__paragraph animate__animated animate__fadeInUpBig">Cupos y horarios sujetos a disponibilidad, los pagos se realizan al inicio de
                 mes
                 por método de transferencia bancaria o en efectivo, informes al contartarme.</p>
             <img class="footer__img" src="./images/Maestra Chivis.png" alt="Logo Maestra Chivis">
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

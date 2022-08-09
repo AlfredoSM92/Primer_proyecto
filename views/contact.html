@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="icon" href="../images/Maestra Chivis.png">
     <title>Maestra Chivis</title>
@@ -15,9 +16,9 @@
     <header class="menu-header">
         <nav class="menu container">
             <a href="../index.html">
-                <img class="menu__img" src="../images/Maestra Chivis.png" alt="Logo">
+                <img class="menu__img animate__animated animate__bounceInLeft" src="../images/Maestra Chivis.png" alt="Logo">
             </a>
-            <section class="menu__section">
+            <section class="menu__section animate__animated animate__bounceInRight">
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="./about.html">Sobre mí</a></li>
                     <li class="menu__item"><a class="menu__link" href="./subjects.html">Materias</a></li>
@@ -30,12 +31,12 @@
     </header>
     <!-- Fin header  -->
     <main class="main_contact container">
-        <h2 class="contact_header headers">Contacto</h2>
-        <p class="contact_paragraph paragraphs">Para apartar tu lugar o si tienes duda del servicio de ayuda estudiantil
+        <h2 class="contact_header headers animate__animated animate__flipInX">Contacto</h2>
+        <p class="contact_paragraph paragraphs animate__animated animate__fadeInUp">Para apartar tu lugar o si tienes duda del servicio de ayuda estudiantil
             llena el siguiente formulario y me contactaré contigo a la brevedad. Después de agender una cita te espero
             en la dirección indicada en el mapa</p>
     </main>
-    <form id="contact_form" class="container" action="#">
+    <form id="contact_form" class="container animate__animated animate__fadeInUp" action="#">
         <label class="contact__label" for="nombre">Nombre(s)</label>
         <input class="contact__item box_form" type="text" name="nombre" id="nombre" placeholder="Juanito">
         <label class="contact__label" for="apellido">Apellido(s)</label>
@@ -53,7 +54,7 @@
         </div>
     </form>
     <section class="section_map container">
-        <h2 class="map_header headers">Mapa</h2>
+        <h2 class="map_header headers animate__animated animate__flipInX">Mapa</h2>
         <iframe class="contact_map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5320.9394198971195!2d-99.13958131629123!3d19.435191443119223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1658801795089!5m2!1ses!2smx"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -61,7 +62,7 @@
     </section>
     <footer class="footer">
         <section class="footer__section container">
-            <p class="footer__paragraph">Cupos y horarios sujetos a disponibilidad, los pagos se realizan al inicio de
+            <p class="footer__paragraph animate__animated animate__fadeInUp">Cupos y horarios sujetos a disponibilidad, los pagos se realizan al inicio de
                 mes
                 por método de transferencia bancaria o en efectivo, informes al contartarme.</p>
             <img class="footer__img" src="../images/Maestra Chivis.png" alt="Logo Maestra Chivis">

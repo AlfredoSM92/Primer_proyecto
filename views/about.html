@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="icon" href="../images/Maestra Chivis.png">
     <title>Maestra Chivis</title>
@@ -15,11 +17,11 @@
     <header class="menu-header">
         <nav class="menu container">
             <a href="../index.html">
-                <img class="menu__img" src="../images/Maestra Chivis.png" alt="Logo">
+                <img class="menu__img animate__animated animate__bounceInLeft" src="../images/Maestra Chivis.png" alt="Logo">
             </a>
-            <section class="menu__section">
+            <section class="menu__section animate__animated animate__bounceInRight">
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link link_active" href="#">Sobre mí</a></li>
+                    <li class="menu__item"><a class="menu__link link_active" href="./about.html">Sobre mí</a></li>
                     <li class="menu__item"><a class="menu__link" href="./subjects.html">Materias</a></li>
                     <li class="menu__item"><a class="menu__link" href="./contact.html">Contacto</a></li>
                     <li class="menu__item"><a class="menu__link" href="./opinions.html">Opiniones</a></li>
@@ -30,43 +32,47 @@
     </header>
     <!-- Fin header  -->
     <main id="main-about">
-        <h2 class="about__header headers">Sobre mí</h2>
+        <h2 class="about__header headers animate__animated animate__flipInX">Sobre mí</h2>
         <section class="section-about container">
-            <p class="about__paragraph paragraphs">¡Hola! un gusto conocerte, mi nombre es Silvia Martínez. Licenciada
+            <p class="about__paragraph paragraphs animate__animated animate__fadeInUp">¡Hola! un gusto conocerte, mi nombre es Silvia Martínez. Licenciada
                 en Administración y profesora privada y me encantan las matemáticas y la física, estoy dispuesta a
                 ayudarte en tus dudas de la escuela, desde aritmética, álgebra, trigonometría, geometría, probabilidad y
                 hasta cálculo diferencial e integral.</p>
-            <img src="../images/signos_1.png" alt="Símbolos matemáticos">
+            <img class="animate__animated animate__fadeInUp" src="../images/signos_1.png" alt="Símbolos matemáticos">
         </section>
     </main>
 
-    <article class="grid_about container">
-        <picture class="grid_about__img">
+    <article class="grid_about container" data-aos="zoom-in">
+        <picture class="grid_about__img" data-aos="zoom-in">
             <img src="../images/grid_about/1.jpg" alt="Fórmulas físicas">
         </picture>
-        <picture class="grid_about__img">
+        <picture class="grid_about__img" data-aos="zoom-in">
             <img src="../images/grid_about/2.jpg" alt="Fórumlas de química">
         </picture>
-        <picture class="grid_about__img">
+        <picture class="grid_about__img" data-aos="zoom-in">
             <img src="../images/grid_about/3.jpg" alt="fórmulas matemáticas">
         </picture>
-        <picture class="grid_about__img">
+        <picture class="grid_about__img" data-aos="zoom-in">
             <img src="../images/grid_about/4.jpg" alt="Fórmulario matematicas">
         </picture>
-        <picture class="grid_about__img">
+        <picture class="grid_about__img" data-aos="zoom-in">
             <img src="../images/grid_about/5.png" alt="Formulario Física">
         </picture>
-        <picture class="grid_about__img">
+        <picture class="grid_about__img" data-aos="zoom-in">
             <img src="../images/grid_about/6.png" alt="Fórmulas generales">
         </picture>
     </article>
     <footer class="footer">
         <section class="footer__section container">
-            <p class="footer__paragraph">Cupos y horarios sujetos a disponibilidad, los pagos se realizan al inicio de
+            <p class="footer__paragraph animate__animated animate__fadeInUp">Cupos y horarios sujetos a disponibilidad, los pagos se realizan al inicio de
                 mes
                 por método de transferencia bancaria o en efectivo, informes al contartarme.</p>
             <img class="footer__img" src="../images/Maestra Chivis.png" alt="Logo Maestra Chivis">
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
