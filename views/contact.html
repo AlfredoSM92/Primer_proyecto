@@ -5,52 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="../CSS/index.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
     <link rel="icon" href="../images/Maestra Chivis.png">
     <title>Maestra Chivis</title>
 </head>
 
 <body>
     <!--Inicia header-->
-    <header class="menu-header">
-        <nav class="menu container">
-            <a href="../index.html">
-                <img class="menu__img animate__animated animate__bounceInLeft" src="../images/Maestra Chivis.png" alt="Logo">
-            </a>
-            <section class="menu__section animate__animated animate__bounceInRight">
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="./about.html">Sobre mí</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./subjects.html">Materias</a></li>
-                    <li class="menu__item"><a class="menu__link link_active" href="#">Contacto</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./opinions.html">Opiniones</a></li>
-                </ul>
-                <h1 class="lema">¡Ven a aprender!</h1>
-            </section>
+    <header class="menu-header p-4">
+        <nav class="navbar navbar-expand-md menu container">
+            <div class="container-fluid ">
+                <a href="../index.html">
+                    <img class="menu__img animate__animated animate__bounceInLeft" src="../images/Maestra Chivis.png"
+                        alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="flex-column align-items-end flex-column collapse navbar-collapse animate__animated animate__bounceInRight"
+                    id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="menu__item nav-item p-3"><a class="menu__link nav-link"
+                                href="../views/about.html">Sobre mí</a></li>
+                        <li class="menu__item nav-item p-3"><a class="menu__link nav-link"
+                                href="../views/subjects.html">Materias</a></li>
+                        <li class="menu__item nav-item p-3"><a class="menu__link nav-link link_active"
+                                href="#">Contacto</a></li>
+                        <li class="menu__item nav-item p-3"><a class="menu__link nav-link"
+                                href="../views/opinions.html">Opiniones</a></li>
+                    </ul>
+                    <h1 class="lema p-3 display-2">¡Ven a aprender!</h1>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Fin header  -->
-    <main class="main_contact container">
+    <main class="main_contact container text-center p-5">
         <h2 class="contact_header headers animate__animated animate__flipInX">Contacto</h2>
-        <p class="contact_paragraph paragraphs animate__animated animate__fadeInUp">Para apartar tu lugar o si tienes duda del servicio de ayuda estudiantil
+        <p class="contact_paragraph paragraphs animate__animated animate__fadeInUp">Para apartar tu lugar o si tienes
+            duda del servicio de ayuda estudiantil
             llena el siguiente formulario y me contactaré contigo a la brevedad. Después de agender una cita te espero
             en la dirección indicada en el mapa</p>
     </main>
     <form id="contact_form" class="container animate__animated animate__fadeInUp" action="#">
-        <label class="contact__label" for="nombre">Nombre(s)</label>
-        <input class="contact__item box_form" type="text" name="nombre" id="nombre" placeholder="Juanito">
-        <label class="contact__label" for="apellido">Apellido(s)</label>
-        <input class="contact__item box_form" type="text" name="apellido" id="apellido" placeholder="Pérez">
-        <label class="contact__label" for="materia">Materia deseada</label>
-        <input class="contact__item box_form" type="text" name="matera" id="materia" placeholder="Matemáticas">
-        <label class="contact__label" for="email">Email</label>
-        <input class="contact__item box_form" type="email" name="email" id="email" placeholder="correo@dominio.com">
-        <label class="contact__label" for="telefono">Telefono</label>
-        <input class="contact__item box_form" type="tel" name="telefono" id="telefono" placeholder="555 123 456">
-        <label class="contact__label" for="duda">Duda o Sugerencia</label>
-        <input class="contact__item box_question" type="text" name="duda" id="duda">
-        <div class="div_contact_button">
-            <input type="submit" name="enviar" id="submit_button">
+        <div class="row g-3">
+            <div class="col">
+                <label class="contact__label" for="Nombre">Nombre</label>
+                <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre"
+                    aria-label="First name">
+            </div>
+            <div class="col">
+                <label class="contact__label" for="Apellido">Apellido</label>
+                <input type="text" class="form-control" name="Apellido" id="Apellido" placeholder="Apellido"
+                    aria-label="Last name">
+            </div>
+            <div class="col">
+                <label class="contact__label" for="materia">Materia deseada</label>
+                <select class="form-select form-control" aria-label="Default select example">
+                    <option value="1">Matemáticas</option>
+                    <option value="2">Física</option>
+                    <option value="3">Química</option>
+                </select>
+            </div>
+            <div>
+                <label class="contact__label" for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Correo electrónico"
+                    aria-label="Email">
+                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            </div>
+            <div class="col">
+                <label class="contact__label" for="phone">Teléfono</label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono"
+                    aria-label="First name">
+            </div>
+            <div class="col">
+                <label class="contact__label" for="duda">Duda o Sugerencia</label>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Comentarios" style="height: 150px"
+                        id="floatingTextarea2"></textarea>
+                    <label for="floatingTextarea2">Comentarios</label>
+                </div>
+                <div class="div_contact_button">
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
         </div>
     </form>
     <section class="section_map container">
@@ -62,11 +105,19 @@
     </section>
     <footer class="footer">
         <section class="footer__section container">
-            <p class="footer__paragraph animate__animated animate__fadeInUp">Cupos y horarios sujetos a disponibilidad, los pagos se realizan al inicio de
+            <p class="footer__paragraph animate__animated animate__fadeInUp">Cupos y horarios sujetos a disponibilidad,
+                los pagos se realizan al inicio de
                 mes
                 por método de transferencia bancaria o en efectivo, informes al contartarme.</p>
             <img class="footer__img" src="../images/Maestra Chivis.png" alt="Logo Maestra Chivis">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

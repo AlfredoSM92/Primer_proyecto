@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Prompt:wght@500;700&display=swap');
+
+/* Variables */
+
+:root {
+    /* Pallette */
+    --primary: #37393A;
+    --accent: #F73770;
+    --alternative: #AD061A;
+    --color_superior: #eb8856b7;
+    --color_back: #f4dab169;
+    --color_footer: #51abe4d5;
+
+    /* Spacing */
+    --space_lg: 48px;
+    --space_md: 36px;
+    --space_sm: 24px;
+
+    /* Fonts family*/
+    --text_accent: 'Josefin Sans', sans-serif;
+    --text_base: 'Prompt', sans-serif;
+
+    /* Fonts Sizes*/
+    --font_xl: 32px;
+    --font_lg: 24px;
+    --font_md: 18px;
+    --font_sm: 12px;
+}
+
+/* FIN VARIABLES*/
+
+/* NORMALIZACION */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--text_base);
+    background-color: var(--color_back);
+}
+
+/* FIN NORMALIZACION */
+
+/* Ayuda */
+.headers {
+    font-size: 2.4em;
+    color: var(--accent);
+    font-family: var(--text_accent);
+    font-weight: 600;
+}
+
+.subtitles {
+    font-size: var(--font_md);
+    color: var(--alternative);
+    font-weight: 700;
+    font-family: var(--text_accent);
+}
+
+.paragraphs {
+    font-size: 1.8em;
+    color: var(--primary);
+    font-family: var(--text_base);
+}
+
+/* INICIO HEADER */
+.menu-header {
+    background-color: var(--color_superior);
+    text-align: center;
+}
+
+.menu__img {
+    max-width: 150px;
+    min-width: 80px;
+}
+
+.lema {
+    font-family: var(--text_accent);
+    color: var(--alternative);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px aliceblue;
+}
+
+.menu__link {
+    font-size: 2.4rem;
+    color: var(--primary);
+    text-shadow: 1px 1px 3px aliceblue;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.link_active {
+    background-color: var(--color_superior);
+    border-radius: 2em;
+}
+
+/* FIN HEADER */
+
+/* INICIO HOME VIEW */
+
+.main_home p {
+    text-align: right;
+    padding-top: 2rem;
+}
+/* FIN HOME VIEW */
+
+
+/* INICIO VISTA ABOUT */
+#about-main img {
+    max-width: 120px;
+    min-width: 90px;
+}
+
+.grid_about {
+    margin-top: 1.5rem;
+    padding: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.grid_about__img:nth-of-type(1){
+    grid-column: span 4;
+}
+.grid_about__img:nth-of-type(2){
+    grid-column: span 4;
+}
+.grid_about__img:nth-of-type(3){
+    grid-column: span 4;
+    grid-row: span 3;
+}
+.grid_about__img:nth-of-type(4){
+    grid-column: span 5;
+}
+.grid_about__img:nth-of-type(5){
+    grid-column: span 3;
+}
+.grid_about__img:nth-of-type(6){
+    grid-column: span 8;
+}
+/*Fin Vista About*/
+
+/* INICIO VISTA SUBJECTS*/
+.subjects_table {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.table-bordered {
+    border: var(--accent);
+}
+
+.subjects_name {
+    color: var(--alternative);
+}
+/* FIN VISTA SUBJECTS */
+
+
+/* INICIO VISTA CONTACT*/
+#contact_form {
+    display: column;
+    text-align: center;
+    max-width: 40vw;
+    min-height: 10vh;
+}
+
+.form-control {
+    min-width: 20vw;
+    min-height: 5vh;
+    font-size: var(--font_md);
+
+}
+
+.contact__label {
+    font-size: 1.4rem;
+}
+
+.btn{
+    background-color: var(--accent);
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.4em;
+}
+
+.btn:hover{
+    background-color: var(--alternative);
+}
+
+.section_map {
+    margin-top: 1.5rem;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.contact_map {
+    max-width: 80vw;
+    max-height: 50vh;
+}
+/* FIN VISTA CONTACT */
+
+/* INICIO VISTA OPINIONS*/
+
+.section_opinions img{
+    max-width: 320px;
+    max-height: 180px;
+    object-fit: fill;
+}
+/* FIN VISTA OPINIONS*/
+
+/* INICIO FOOTER*/
+.footer {
+    background-color: var(--color_footer);
+    padding: 1rem;
+    margin-top: 15rem;
+}
+
+.footer__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer p {
+    padding: 1rem;
+}
+
+.footer img {
+    width: 60px;
+}
+/* FIN FOOTER*/
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .menu__link {
+        font-size: 1.8rem;
+    }
+
+    .main_home {
+        justify-content: center;
+    }
+
+    .main_home p{
+        text-align: center;
+    }
+
+    .main_home img, .menu img, .section_opinions img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .main-rest__img-online, .main-rest__img-presential {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        font-size: var(--font_sm);
+    }
+
+    .section_opinions img {
+        width: 20vw;
+        height: 12vh;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
