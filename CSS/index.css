@@ -271,6 +271,10 @@ body {
     gap: 1.2rem;
 }
 
+.grid_about img{
+    object-fit: fill;
+}
+
 .grid_about__img:nth-of-type(1){
     grid-column: span 4;
 }
@@ -416,9 +420,8 @@ table {
 }
 
 .section_opinions img {
-    max-height: 40vh;
-    max-width: 50vw;
-    min-width: 20vw;
+    max-height: 350px;
+    object-fit: contain;
 }
 
 .opinion_grid:nth-of-type(1) {
