@@ -1,0 +1,30 @@
+.headers {
+    font-size: 2.4em;
+    color: $accent;
+    font-family: $text_accent;
+    font-weight: 600;
+}
+
+.subtitles {
+    font-size: $font_md;
+    color: $alternative;
+    font-weight: 700;
+    font-family: $text_accent;
+}
+
+.paragraphs {
+    font-size: 1.8em;
+    color: $primary;
+    font-family: $text_base;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link_active {
+    padding: .5rem;
+    border: 1px solid $alternative;
+    background-color: rgba(233, 119, 12, 0.2)
+}

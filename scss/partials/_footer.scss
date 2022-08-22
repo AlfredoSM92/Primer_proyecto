@@ -1,0 +1,21 @@
+.footer {
+    background-color: $color_footer;
+    padding: 1rem;
+    margin-top: 15rem;
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    & p {
+        padding: 1rem;
+    }
+    
+    & img {
+        width: 60px;
+    }
+}

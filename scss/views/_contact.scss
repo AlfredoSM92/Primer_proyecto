@@ -1,0 +1,65 @@
+.main_contact {
+    margin-top: 1.2rem;
+    padding: 1.8rem;
+    justify-content: center;
+    & h2 {
+        text-align: center;
+    }
+    & p {
+        text-align: justify;
+    }
+}
+
+.contact_header {
+    padding-bottom: $space_md;
+}
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: $font_md;
+}
+
+.contact__label, .div_contact_button {
+    padding-top: 1.2rem;
+}
+
+.box {
+    &_form {
+        max-width: 40vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    &_question {
+        margin: 0 auto;
+        text-align: justify;
+        min-width: 20vw;
+        min-height: 10vh;
+        padding-bottom: $space_lg;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+
+#submit_button {
+    margin: 0 auto;
+    max-width: 30vw;
+    max-height: 15vw;
+}
+
+.section_map {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.contact_map {
+    max-width: 80vw;
+    max-height: 50vh;
+}

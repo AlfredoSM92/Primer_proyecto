@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $text_base;
+    background: linear-gradient(to top, rgba(238,108,83,0.3085609243697479) 0%, rgba(254,184,127,0.19091386554621848) 100%);
+}

@@ -1,0 +1,31 @@
+#main_subjects {
+    padding: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    margin-bottom: $font_lg;
+}
+
+.subjects{
+    &_header {
+        padding-bottom: $space_md;
+    }
+    
+    &_table {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        padding: 1.5rem;
+    }
+    &_name, &themes {
+        font-size: $font_md;
+        text-align: center;
+        color: $primary;
+    }
+}
+
+table {
+    border: 3px solid $alternative;
+    transform: scale(1.2);
+}
