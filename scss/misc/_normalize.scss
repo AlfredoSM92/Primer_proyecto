@@ -15,7 +15,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: $primary;
+    color: map-get($map: $colors, $key: primary);
 }
 
 html {
@@ -24,5 +24,7 @@ html {
 
 body {
     font-family: $text_base;
-    background: linear-gradient(to top, rgba(238,108,83,0.3085609243697479) 0%, rgba(254,184,127,0.19091386554621848) 100%);
+    background-color: map-get($map: $colors, $key: body_color);
 }
+
+

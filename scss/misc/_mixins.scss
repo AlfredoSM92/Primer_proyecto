@@ -1,0 +1,14 @@
+@mixin font($sz, $ff, $wg, $cl) {
+    font-size: $sz;
+    font-family: $ff;
+    font-weight: $wg;
+    color: $cl;
+}
+
+@mixin flex($wp, $dir, $ai, $jc) {
+    display: flex;
+    flex-wrap: $wp;
+    flex-direction: $dir;
+    align-items: $ai;
+    justify-content: $jc;
+}

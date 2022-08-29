@@ -1,11 +1,13 @@
     /* Pallette */
-    $primary: #37393A;
-    $accent: #F73770;
-    $alternative: #AD061A;
-    $color_superior: #eb8856b7;
-    $color_back: #F4DAB1;
-    $color_footer: #51abe4d5;
-
+    $colors: (
+        header_color: #eb8856b7,
+        body_color: linear-gradient(to top, rgba(238,108,83,0.3085609243697479) 0%, rgba(254,184,127,0.19091386554621848) 100%),
+        footer_color: #51abe4d5,
+        primary: #37393A,
+        accent: #F73770,
+        alternative: #AD061A
+    );
+    
     /* Spacing */
     $space_lg: 48px;
     $space_md: 36px;

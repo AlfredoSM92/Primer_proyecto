@@ -1,21 +1,13 @@
 .headers {
-    font-size: 2.4em;
-    color: $accent;
-    font-family: $text_accent;
-    font-weight: 600;
+    @include font(2.4em, $text_accent, 600, map-get($map: $colors, $key: accent));
 }
 
 .subtitles {
-    font-size: $font_md;
-    color: $alternative;
-    font-weight: 700;
-    font-family: $text_accent;
+    @include font($font_md, $text_accent, 700, map-get($map: $colors, $key: alternative));
 }
 
 .paragraphs {
-    font-size: 1.8em;
-    color: $primary;
-    font-family: $text_base;
+    @include font(1.8em, $text_base, 400,map-get($map: $colors, $key: primary));
 }
 
 .container {
@@ -25,6 +17,7 @@
 
 .link_active {
     padding: .5rem;
-    border: 1px solid $alternative;
+    border: 1px solid map-get($map: $colors, $key: alternative);
     background-color: rgba(233, 119, 12, 0.2)
 }
+

@@ -4,10 +4,7 @@
 }
 
 .section-about {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include flex(wrap, row, center, center);
     text-align: justify;
     padding: 1.8rem;
     & img {

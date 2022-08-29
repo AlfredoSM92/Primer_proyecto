@@ -1,13 +1,10 @@
 .footer {
-    background-color: $color_footer;
+    background-color: map-get($map: $colors, $key: footer_color);
     padding: 1rem;
     margin-top: 15rem;
 
     &__section {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
+        @include flex(wrap, row, center, space-around);
         text-align: center;
     }
     

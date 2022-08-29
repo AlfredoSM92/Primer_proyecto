@@ -1,9 +1,6 @@
 #main_opinions {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include flex(wrap, column, center, flex-start);
     padding: 1.8rem;
-    align-items: center;
     text-align: justify;
 }
 

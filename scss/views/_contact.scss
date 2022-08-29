@@ -2,9 +2,11 @@
     margin-top: 1.2rem;
     padding: 1.8rem;
     justify-content: center;
+
     & h2 {
         text-align: center;
     }
+
     & p {
         text-align: justify;
     }
@@ -15,31 +17,33 @@
 }
 
 #contact_form {
-    display: flex;
-    flex-direction: column;
+    @include flex(no-wrap, column, center, flex-start);
     text-align: center;
     font-size: $font_md;
 }
 
-.contact__label, .div_contact_button {
+.contact__label,
+.div_contact_button {
     padding-top: 1.2rem;
 }
 
 .box {
+    margin: 0 auto;
+    text-align: center;
+    @include flex(wrap, row, center, center);
+    padding-bottom: $space_lg;
+    border: solid 1px map-get($map: $colors, $key: accent);
+    border-radius: 1em;
     &_form {
-        max-width: 40vw;
-        margin: 0 auto;
-        text-align: center;
+        @extend .box;
+        max-width: 60vw;
+        min-height: 5vh;
     }
-    
+
     &_question {
-        margin: 0 auto;
-        text-align: justify;
-        min-width: 20vw;
-        min-height: 10vh;
-        padding-bottom: $space_lg;
-        display: flex;
-        justify-content: flex-start;
+        @extend .box;
+        min-width: 40vw;
+        min-height: 10vh;       
     }
 
 }
@@ -52,10 +56,7 @@
 
 .section_map {
     padding: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(no-wrap, column, center, center);
     gap: 1.2rem;
 }
 
