@@ -24,7 +24,9 @@ html {
 
 body {
     font-family: $text_base;
-    background-color: map-get($map: $colors, $key: body_color);
+    background: linear-gradient(to top, rgba(255, 179, 164, 0.309) 0%, rgba(254,184,127,0.19091386554621848) 100%);
 }
 
-
+.navbar-toggler {
+    margin-top: 2rem;
+}

@@ -1,5 +1,6 @@
 .headers {
-    @include font(2.4em, $text_accent, 600, map-get($map: $colors, $key: accent));
+    @include font(3em, $text_accent, 600, map-get($map: $colors, $key: accent));
+    margin-top: 4rem;
 }
 
 .subtitles {
@@ -21,3 +22,6 @@
     background-color: rgba(233, 119, 12, 0.2)
 }
 
+.content {
+    min-height: 50vh;
+}

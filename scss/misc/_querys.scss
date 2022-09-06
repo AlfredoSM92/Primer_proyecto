@@ -1,3 +1,9 @@
+@media (min-height: 950px) {
+    .content {
+        min-height: 100vh;
+    }
+} 
+
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -5,8 +11,16 @@
         &__item {
             font-size: 2rem;
             padding-inline: 1.2rem;
+            padding-top: 1rem;
+        }
+        &__section {
+            @include flex(no-wrap, column, center, center);
+            & .lema {
+                padding: 1rem 0;
+            }
         }
     }
+    
 
 
     .main_home {
