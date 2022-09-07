@@ -474,4 +474,6 @@ table {
   .subjects_name,
   .subjects_themes {
     font-size: 1.5rem;
-    text-align: center; } }
+    text-align: center; }
+  .subjects_table table {
+    transform: scale(1); } }
